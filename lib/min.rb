@@ -5,11 +5,10 @@ groceries = {
  dairy: ["milk", "yogurt", "cheese"],
  vegetable: ["carrots", "broccoli", "cucumbers"],
  meat: ["chicken", "steak", "salmon"],
- grains: ["rice", "pasta"],
- apple: []
+ grains: ["rice", "pasta"]
 }
 
 def get_the_min(groceries)
-  groceries.min
+  groceries.values.flatten.min
   binding.pry
 end
